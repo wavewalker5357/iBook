@@ -1,0 +1,193 @@
+$white: #FFFFFF;
+$black: #000000;
+
+$color1: #990000;
+$color2: #FF0000;
+
+$baseBorderRadius:      1px;
+$borderRadiusLarge:     1px;
+$borderRadiusSmall:     1px;
+
+$popoverBackground: rgba(0,0,0,0.78);
+
+$linkColor: $color1;
+$linkColorHover: $color2;
+
+$btnPrimaryBackground: $color1;
+$btnPrimaryBackgroundHighlight: $color2;
+
+$inputBackground: $white;
+$inputBorder: lighten($black, 40%);
+
+$wellBackground: lighten($black, 80%);
+
+$sansFontFamily: Arial, sans-serif;
+$gridGutterWidth: 0px;
+
+$baseFontSize: 16px;
+$baseLineHeight: 28px;
+
+$inputHeight: 18px;
+$baseLineHeight: 18px;
+@import 'sass-bootstrap/lib/bootstrap';
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+
+////////////////
+// INTERFACE  //
+////////////////
+
+.well {
+	background-color: #F2F2F2;
+	.navbar {
+		margin-bottom: 0;
+		.navbar-inner {
+			h5 {
+				margin-top: 0;
+				margin-bottom: 0;
+				line-height: 42px;
+			}
+		}
+	}
+}
+
+pre.prettyprint {
+	margin-bottom: 0;
+	ol {
+		li {
+			-webkit-transition: background-color 0.5s ease;
+			-moz-transition: background-color 0.5s ease;
+			-ms-transition: background-color 0.5s ease;
+			-o-transition: background-color 0.5s ease;
+			transition: background-color 0.5s ease;
+			&.active-line {
+				background-color: green;
+			}
+		}
+	}
+}
+
+///////////////
+// PRETTIFY  //
+///////////////
+
+
+/*
+ * Derived from einaros's Sons of Obsidian theme at
+ * http://studiostyl.es/schemes/son-of-obsidian by
+ * Alex Ford of CodeTunnel:
+ * http://CodeTunnel.com/blog/post/71/google-code-prettify-obsidian-theme
+ */
+
+.str
+{
+    color: #EC7600;
+}
+.kwd
+{
+    color: #93C763;
+}
+.com
+{
+    color: #66747B;
+}
+.typ
+{
+    color: #678CB1;
+}
+.lit
+{
+    color: #FACD22;
+}
+.pun
+{
+    color: #F1F2F3;
+}
+.pln
+{
+    color: #F1F2F3;
+}
+.tag
+{
+    color: #8AC763;
+}
+.atn
+{
+    color: #E0E2E4;
+}
+.atv
+{
+    color: #EC7600;
+}
+.dec
+{
+    color: purple;
+}
+pre.prettyprint
+{
+    border: 0px solid #888;
+}
+ol.linenums
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.prettyprint {
+    background: #000;
+}
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
+{
+    color: #555;
+    list-style-type: decimal;
+}
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+    background: #111;
+}
+@media print
+{
+    .str
+    {
+        color: #060;
+    }
+    .kwd
+    {
+        color: #006;
+        font-weight: bold;
+    }
+    .com
+    {
+        color: #600;
+        font-style: italic;
+    }
+    .typ
+    {
+        color: #404;
+        font-weight: bold;
+    }
+    .lit
+    {
+        color: #044;
+    }
+    .pun
+    {
+        color: #440;
+    }
+    .pln
+    {
+        color: #000;
+    }
+    .tag
+    {
+        color: #006;
+        font-weight: bold;
+    }
+    .atn
+    {
+        color: #404;
+    }
+    .atv
+    {
+        color: #060;
+    }
+}
