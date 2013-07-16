@@ -62,7 +62,7 @@ pre.prettyprint {
 			-o-transition: background-color 0.5s ease;
 			transition: background-color 0.5s ease;
 			&.active-line {
-				background-color: green;
+				background-color: lightgreen;
 			}
 		}
 	}
@@ -72,122 +72,69 @@ pre.prettyprint {
 // PRETTIFY  //
 ///////////////
 
-
-/*
- * Derived from einaros's Sons of Obsidian theme at
- * http://studiostyl.es/schemes/son-of-obsidian by
- * Alex Ford of CodeTunnel:
- * http://CodeTunnel.com/blog/post/71/google-code-prettify-obsidian-theme
+/* Pretty printing styles. Used with prettify.js.
+ *
+ * Name:    Stanley Ng
+ * Email:   stanleyhlng@googlegroups.com
+ * 
  */
+.pln {
+  color: #bd3613; }
 
-.str
-{
-    color: #EC7600;
-}
-.kwd
-{
-    color: #93C763;
-}
-.com
-{
-    color: #66747B;
-}
-.typ
-{
-    color: #678CB1;
-}
-.lit
-{
-    color: #FACD22;
-}
-.pun
-{
-    color: #F1F2F3;
-}
-.pln
-{
-    color: #F1F2F3;
-}
-.tag
-{
-    color: #8AC763;
-}
-.atn
-{
-    color: #E0E2E4;
-}
-.atv
-{
-    color: #EC7600;
-}
-.dec
-{
-    color: purple;
-}
-pre.prettyprint
-{
-    border: 0px solid #888;
-}
-ol.linenums
-{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.prettyprint {
-    background: #000;
-}
-li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9
-{
-    color: #555;
-    list-style-type: decimal;
-}
-li.L1, li.L3, li.L5, li.L7, li.L9 {
-    background: #111;
-}
-@media print
-{
-    .str
-    {
-        color: #060;
-    }
-    .kwd
-    {
-        color: #006;
-        font-weight: bold;
-    }
-    .com
-    {
-        color: #600;
-        font-style: italic;
-    }
-    .typ
-    {
-        color: #404;
-        font-weight: bold;
-    }
-    .lit
-    {
-        color: #044;
-    }
-    .pun
-    {
-        color: #440;
-    }
-    .pln
-    {
-        color: #000;
-    }
-    .tag
-    {
-        color: #006;
-        font-weight: bold;
-    }
-    .atn
-    {
-        color: #404;
-    }
-    .atv
-    {
-        color: #060;
-    }
-}
+.str {
+  color: #269186; }
+
+.kwd {
+  color: #859900; }
+
+.com {
+  color: #586175;
+  font-style: italic; }
+
+.typ {
+  color: #b58900; }
+
+.lit {
+  color: #2aa198; }
+
+.pun {
+  color: #839496; }
+
+.opn {
+  color: #839496; }
+
+.clo {
+  color: #839496; }
+
+.tag {
+  color: #268bd2; }
+
+.atn {
+  color: #586175; }
+
+.atv {
+  color: #2aa198; }
+
+.dec {
+  color: #268bd2; }
+
+.var {
+  color: #268bd2; }
+
+.fun {
+  color: #FF0000; }
+
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint {
+  background-color: #fdf6e3;
+  padding: 10px;
+  border: 1px solid #E1E1E8; }
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  color: #4c666c;
+  margin: 0 0 0 40px; }
+
+ol.linenums li {
+  line-height: 18px;
+  padding-left: 12px; }
